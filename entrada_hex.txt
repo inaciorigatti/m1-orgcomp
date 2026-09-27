@@ -1,0 +1,12 @@
+# Conjunto de teste - uma instrucao por linha, em hexadecimal
+# Cobre os seis formatos e inclui um desvio com deslocamento negativo.
+
+0x00500413   # addi s0, zero, 5           (tipo I)
+0x00C58633   # add  a2, a1, a2            (tipo R)
+0x0064A423   # sw   t1, 8(s1)             (tipo S)
+0xFE628CE3   # beq  t0, t1, -8            (tipo B, deslocamento negativo)
+0x000102B7   # lui  t0, 0x10              (tipo U)
+0x000000EF   # jal  ra, 0                 (tipo J)
+0x00000013   # addi x0, x0, 0  -> nop     (pseudo-instrucao)
+0x00008067   # jalr x0, 0(x1) -> ret      (pseudo-instrucao)
+0xFFFFFFFF   # palavra sem opcode valido -> instrucao invalida proposital

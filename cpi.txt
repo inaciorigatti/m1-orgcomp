@@ -1,0 +1,8 @@
+# Tabela de CPI por classe (formato) de instrucao.
+# Formato de cada linha: <FORMATO> <valor_de_CPI>
+R 1.0
+I 1.0
+S 1.2
+B 1.8
+U 1.0
+J 1.5
